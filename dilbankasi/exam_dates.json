@@ -1,0 +1,16 @@
+{
+  "_not": "Tarihler ÖSYM 2026 takviminden alındı (Temmuz 2026). Her sürümde osym.gov.tr üzerinden teyit edin; ÖSYM tarih değiştirebiliyor.",
+  "_eksik": "2027 takvimi henüz yayımlanmadı. YKS (YDT) ve 2027 YDS/YÖKDİL oturumları açıklandığında buraya eklenmeli.",
+  "exams": [
+    {
+      "key": "yokdil",
+      "name": "YÖKDİL/2",
+      "date": "2026-08-09"
+    },
+    {
+      "key": "yds",
+      "name": "YDS/2",
+      "date": "2026-11-22"
+    }
+  ]
+}
