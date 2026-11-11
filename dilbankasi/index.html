@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dil Bankası: YDS, YÖKDİL ve YDT soru bankası</title>
+<meta name="description" content="YDS, YÖKDİL ve YDT için 20.000 özgün soru: gerçek sınav düzeninde testler, süreli denemeler ve Türkçe açıklamalar. Android ve iPhone'da ücretsiz indir.">
+<link rel="canonical" href="https://grambytestudio.github.io/dilbankasi/">
+<meta name="theme-color" content="#1d4ed8">
+<meta name="apple-itunes-app" content="app-id=6821475932">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="GramByte Studio">
+<meta property="og:title" content="Dil Bankası: YDS, YÖKDİL ve YDT soru bankası">
+<meta property="og:description" content="20.000 özgün soru, gerçek sınav düzeninde testler ve Türkçe açıklamalar. Android ve iPhone'da ücretsiz.">
+<meta property="og:url" content="https://grambytestudio.github.io/dilbankasi/">
+<meta property="og:image" content="https://grambytestudio.github.io/dilbankasi/img/onizleme.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/simge.png">
+<link rel="apple-touch-icon" href="img/simge.png">
+<script>
+// Telefondan açanı doğrudan kendi mağazasına gönderir. Sayfayı telefonda
+// görmek için adresin sonuna ?sayfa eklenir. Bağlantı önizlemesi çıkaran
+// servisler ve arama motorları yönlendirilmez.
+(function () {
+  var ua = navigator.userAgent || '';
+  if (/[?&]sayfa(=|&|$)/.test(location.search)) return;
+  if (/bot|crawl|spider|preview|facebookexternalhit|whatsapp|telegram|slack|discord|lighthouse|inspectiontool|googleother|mediapartners/i.test(ua)) return;
+  if (/Android/i.test(ua)) {
+    location.replace('https://play.google.com/store/apps/details?id=com.dilbankasi.app');
+  } else if (/iPhone|iPad|iPod/i.test(ua)) {
+    location.replace('https://apps.apple.com/tr/app/id6821475932');
+  }
+})();
+</script>
+<link rel="stylesheet" href="../style.css">
+<style>
+@font-face {
+  font-family: "Lexend";
+  src: url("fonts/Lexend-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+  --blue-light: #3b7bf5;
+  --blue: #1d4ed8;
+  --blue-deep: #1e3fae;
+  --yellow: #ffd600;
+  --display: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* Üst bölüm */
+.hero {
+  background: linear-gradient(135deg, var(--blue-light) 0%, var(--blue) 55%, var(--blue-deep) 100%);
+  color: #fff;
+  padding: 20px 0 190px;
+  text-align: center;
+}
+.studio {
+  display: inline-block;
+  color: rgba(255, 255, 255, .82);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.studio:hover { color: #fff; }
+.app-icon {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 44px auto 20px;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(10, 24, 80, .35);
+}
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -.01em;
+  margin: 0;
+}
+.hero .lead {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  line-height: 1.3;
+  margin: 14px auto 0;
+  max-width: 22em;
+  text-wrap: balance;
+}
+.hero .sub {
+  color: rgba(255, 255, 255, .86);
+  margin: 12px auto 0;
+  max-width: 34em;
+  text-wrap: pretty;
+}
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 1 280px;
+  padding: 11px 20px 12px;
+  border-radius: 16px;
+  background: #fff;
+  color: #1a1815;
+  text-decoration: none;
+  line-height: 1.25;
+  box-shadow: 0 8px 22px rgba(10, 24, 80, .28);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.store small { font-size: .78rem; font-weight: 600; color: #5c554a; }
+.store strong { font-family: var(--display); font-size: 1.3rem; font-weight: 700; }
+.store:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(10, 24, 80, .36); }
+.store:focus-visible, .studio:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.qr {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  width: max-content;
+  margin: 26px auto 0;
+  padding: 12px 20px 12px 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .14);
+  border: 1px solid rgba(255, 255, 255, .28);
+  text-align: left;
+}
+.qr svg {
+  display: block;
+  width: 92px;
+  height: 92px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+}
+.qr p { margin: 0; font-size: .95rem; line-height: 1.4; }
+.qr b { display: block; font-family: var(--display); font-size: 1.05rem; }
+@media (min-width: 900px) { .qr { display: flex; } }
+
+/* Ekran görüntüleri: telefonda yatay kaydırma, geniş ekranda 4'lü ızgara */
+.shots {
+  display: flex;
+  gap: 14px;
+  margin-top: -150px;
+  padding: 0 20px 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.shots img {
+  flex: 0 0 auto;
+  width: min(62vw, 240px);
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  background: var(--blue);
+  box-shadow: 0 10px 28px rgba(10, 24, 80, .28);
+  scroll-snap-align: center;
+}
+.shots:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media (min-width: 900px) {
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+  }
+  .shots img { width: 100%; }
+}
+
+/* Özellikler */
+.section { padding: 40px 0 8px; }
+.section h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+.section .intro { margin: 0 0 20px; max-width: 40em; color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+.grid .card { margin: 0; }
+.grid h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  margin: 0 0 6px;
+}
+.grid p { margin: 0; color: var(--muted); font-size: .98rem; }
+.exam {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: #1a1815;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: .95rem;
+  letter-spacing: .02em;
+}
+
+/* Alt çağrı ve sayfa sonu */
+.cta {
+  margin: 44px 0 0;
+  padding: 36px 24px 40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--blue-light), var(--blue) 60%, var(--blue-deep));
+  color: #fff;
+  text-align: center;
+}
+.cta h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.4rem, 4vw, 1.9rem); margin: 0; }
+.cta p { margin: 8px 0 0; color: rgba(255, 255, 255, .86); }
+.cta .stores { margin-top: 22px; }
+.foot { padding: 28px 0 56px; font-size: .9rem; color: var(--muted); }
+.foot p { margin: 6px 0; }
+.foot .tm { font-size: .8rem; }
+@media (prefers-reduced-motion: reduce) { .store { transition: none; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dil Bankası: YDS YÖKDİL YDT",
+  "operatingSystem": "Android, iOS",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": "tr",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+  "publisher": { "@type": "Organization", "name": "GramByte Studio" },
+  "installUrl": [
+    "https://play.google.com/store/apps/details?id=com.dilbankasi.app",
+    "https://apps.apple.com/tr/app/id6821475932"
+  ]
+}
+</script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <a class="studio" href="../">← GramByte Studio</a>
+    <img class="app-icon" src="img/simge.png" width="96" height="96" alt="Dil Bankası uygulama simgesi">
+    <h1>Dil Bankası</h1>
+    <p class="lead">YDS, YÖKDİL ve YDT için 20.000 özgün soru</p>
+    <p class="sub">Gerçek sınav düzeninde tam testler, süreli denemeler ve her soruda Türkçe açıklama. İndirmesi ücretsiz.</p>
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.dilbankasi.app">
+        <small>Android için</small><strong>Google Play'den indir</strong>
+      </a>
+      <a class="store" href="https://apps.apple.com/tr/app/id6821475932">
+        <small>iPhone ve iPad için</small><strong>App Store'dan indir</strong>
+      </a>
+    </div>
+    <div class="qr">
+      <svg role="img" aria-label="Dil Bankası sayfasının QR kodu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><path stroke="#1a1815" d="M0 0.5h7m2 0h7m2 0h6m2 0h7m-33 1h1m5 0h1m1 0h2m1 0h2m4 0h1m3 0h1m1 0h1m2 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h3m1 0h2m2 0h1m2 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h4m5 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m5 0h2m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h1m3 0h8m1 0h1m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h3m1 0h7m2 0h3m-24 1h3m1 0h2m3 0h4m1 0h1m1 0h1m3 0h1m1 0h1m6 0h2m-30 1h2m1 0h1m1 0h1m3 0h2m1 0h10m2 0h2m1 0h4m-33 1h7m1 0h2m1 0h1m2 0h3m1 0h1m1 0h1m2 0h2m2 0h3m1 0h2m-33 1h1m4 0h1m1 0h1m1 0h5m3 0h1m1 0h2m3 0h1m2 0h1m1 0h1m-30 1h1m1 0h1m1 0h3m1 0h2m1 0h1m2 0h2m6 0h4m1 0h3m2 0h1m-33 1h1m1 0h2m1 0h1m3 0h2m2 0h2m2 0h1m1 0h2m3 0h1m2 0h1m3 0h1m-32 1h2m4 0h1m1 0h2m1 0h2m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m-27 1h3m1 0h2m1 0h1m1 0h2m2 0h1m2 0h1m1 0h1m2 0h1m2 0h3m1 0h3m-31 1h1m1 0h8m3 0h1m1 0h1m3 0h4m2 0h2m1 0h3m-28 1h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1m2 0h7m1 0h2m1 0h2m-32 1h1m4 0h2m1 0h1m3 0h1m4 0h1m1 0h1m1 0h1m2 0h4m1 0h2m-27 1h1m1 0h1m1 0h2m3 0h5m4 0h1m1 0h1m2 0h1m2 0h1m-30 1h1m2 0h2m3 0h1m1 0h1m1 0h2m1 0h3m1 0h1m3 0h1m3 0h2m-31 1h2m3 0h1m1 0h1m2 0h1m2 0h2m1 0h1m2 0h3m1 0h1m2 0h2m4 0h1m-30 1h5m5 0h1m1 0h1m6 0h2m1 0h2m1 0h2m1 0h2m-32 1h5m2 0h1m2 0h3m1 0h2m7 0h1m1 0h1m1 0h2m1 0h1m-32 1h1m1 0h1m1 0h8m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h6m1 0h2m-25 1h3m1 0h2m1 0h1m1 0h3m1 0h4m3 0h2m-30 1h7m7 0h1m2 0h1m1 0h1m1 0h4m1 0h1m1 0h1m-29 1h1m5 0h1m1 0h1m2 0h3m2 0h3m1 0h5m3 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h3m4 0h3m2 0h8m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h3m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m3 0h3m1 0h3m1 0h1m3 0h4m1 0h2m-31 1h1m5 0h1m1 0h2m2 0h2m1 0h2m1 0h1m1 0h1m1 0h4m1 0h2m3 0h1m-33 1h7m2 0h4m1 0h3m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1"/></svg>
+      <p><b>Bilgisayardan mı bakıyorsun?</b>Telefonunun kamerasıyla tara,<br>kendi mağazan açılsın.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="shots" role="region" aria-label="Uygulamadan ekran görüntüleri" tabindex="0">
+    <img src="img/ekran-1.jpg" width="540" height="960" alt="Ana ekran: günlük hedef ve sınava kalan gün sayacı">
+    <img src="img/ekran-2.jpg" width="540" height="960" alt="Soru ekranı: cevabını ver, doğruyu ve yanlışı anında gör">
+    <img src="img/ekran-3.jpg" width="540" height="960" alt="Her sorunun Türkçe çözümü">
+    <img src="img/ekran-4.jpg" width="540" height="960" alt="Tam uzunlukta testlerin listesi">
+    <img src="img/ekran-5.jpg" width="540" height="960" loading="lazy" alt="Bölüm bazlı sonuç ve eksik konular">
+    <img src="img/ekran-6.jpg" width="540" height="960" loading="lazy" alt="Sınav seçimi: YDS, YÖKDİL ve YDT tek uygulamada">
+    <img src="img/ekran-7.jpg" width="540" height="960" loading="lazy" alt="Gerçek süreyle deneme sınavı">
+    <img src="img/ekran-8.jpg" width="540" height="960" loading="lazy" alt="Koyu tema ve ayarlanabilir yazı boyutu">
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Neler var?</h2>
+      <p class="intro">Sorular sınav formatına göre özgün olarak hazırlandı; testler gerçek sınavdaki bölüm dağılımını izler.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Tam testler ve süreli denemeler</h3>
+          <p>Gerçek sınavın soru sayısı ve bölüm dağılımıyla. Denemede sayaç çalışır, sonucu test bitince görürsün.</p>
+        </div>
+        <div class="card">
+          <h3>Konu testleri ve mini test</h3>
+          <p>Kelime, dilbilgisi, çeviri, okuma ve diğer bölümlerde yalnızca çalışmak istediğin konuyu seç.</p>
+        </div>
+        <div class="card">
+          <h3>Türkçe açıklamalar</h3>
+          <p>Her soruda kısa Türkçe açıklama var. YDS ve YDT sorularında ayrıca şıkları tek tek ele alan detaylı açıklama bulunur; reklamsız planla ya da kısa bir reklam izleyerek açılır.</p>
+        </div>
+        <div class="card">
+          <h3>Sonuç ve eksik konular</h3>
+          <p>Bölüm bazlı sonuç, eksik kaldığın konular, yanlışların ve favorilerin tek yerde.</p>
+        </div>
+        <div class="card">
+          <h3>Günlük hedef ve sınav sayacı</h3>
+          <p>Kendine günlük soru hedefi koy; sınava kaç gün kaldığını ana ekranda gör.</p>
+        </div>
+        <div class="card">
+          <h3>İnternetsiz çalışır</h3>
+          <p>Sorular uygulamanın içinde; çözmek için bağlantı gerekmez. Koyu tema ve yazı boyutu ayarı da var.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Hangi sınavlar?</h2>
+      <p class="intro">Sınavını bir kez seçersin; ana ekran, testler ve sayaç ona göre düzenlenir.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="exam">YDS</span>
+          <p>Yabancı Dil Bilgisi Seviye Tespit Sınavı için tam uzunlukta testler ve konu testleri.</p>
+        </div>
+        <div class="card">
+          <span class="exam">YÖKDİL</span>
+          <p>Fen, Sağlık ve Sosyal Bilimler alanlarının her biri için ayrı testler.</p>
+        </div>
+        <div class="card">
+          <span class="exam">YDT</span>
+          <p>Üniversite sınavının Yabancı Dil Testi için tam uzunlukta testler ve konu testleri.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <h2>Hemen çözmeye başla</h2>
+        <p>Hesap açmak gerekmez; indir, sınavını seç, ilk testini çöz.</p>
+        <div class="stores">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.dilbankasi.app">
+            <small>Android için</small><strong>Google Play'den indir</strong>
+          </a>
+          <a class="store" href="https://apps.apple.com/tr/app/id6821475932">
+            <small>iPhone ve iPad için</small><strong>App Store'dan indir</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Uygulama ücretsizdir ve reklamlarla desteklenir; reklamsız kullanım isteğe bağlı planlarla alınır.</p>
+    <p><a href="gizlilik.html">Gizlilik Politikası</a> · <a href="mailto:grambytestudio@gmail.com">grambytestudio@gmail.com</a> · <a href="../">GramByte Studio</a></p>
+    <p class="tm">© 2026 GramByte Studio. Google Play, Google LLC'nin; App Store, iPhone ve iPad, Apple Inc.'in ticari markalarıdır.</p>
+  </div>
+</footer>
+</body>
+</html>
